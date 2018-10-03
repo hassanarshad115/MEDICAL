@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B097786-A43A-4416-8DFE-B1CAC1995765}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MEDICAL</RootNamespace>
+    <AssemblyName>MEDICAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADDItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADDItem.Designer.cs">
+      <DependentUpon>ADDItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company.Designer.cs">
+      <DependentUpon>Company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS_CLIENT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CLIENT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS_COMPANY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_COMPANY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS_ITEM.cs">
+      <DependentUpon>DS_ITEM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS_ITEM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ITEM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS_SALES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SALES.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS_SOUT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SOUT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS_STOCK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_STOCK.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS_USER.cs">
+      <DependentUpon>DS_USER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS_USER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_USER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICALDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MEDICALDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICALDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MEDICALDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICALDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MEDICALDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ADDItem.resx">
+      <DependentUpon>ADDItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company.resx">
+      <DependentUpon>Company.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SELL.resx">
+      <DependentUpon>SELL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellReport.resx">
+      <DependentUpon>SellReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport.resx">
+      <DependentUpon>StockReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalStockReport.resx">
+      <DependentUpon>TotalStockReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMst.resx">
+      <DependentUpon>UserMst.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DS\DS_CLIENT.xsc">
+      <DependentUpon>DS_CLIENT.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_CLIENT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CLIENT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS\DS_CLIENT.xss">
+      <DependentUpon>DS_CLIENT.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_COMPANY.xsc">
+      <DependentUpon>DS_COMPANY.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_COMPANY.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_COMPANY.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS\DS_COMPANY.xss">
+      <DependentUpon>DS_COMPANY.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_ITEM.xsc">
+      <DependentUpon>DS_ITEM.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_ITEM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ITEM.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS\DS_ITEM.xss">
+      <DependentUpon>DS_ITEM.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_SALES.xsc">
+      <DependentUpon>DS_SALES.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_SALES.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SALES.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS\DS_SALES.xss">
+      <DependentUpon>DS_SALES.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_SOUT.xsc">
+      <DependentUpon>DS_SOUT.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_SOUT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SOUT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS\DS_SOUT.xss">
+      <DependentUpon>DS_SOUT.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_STOCK.xsc">
+      <DependentUpon>DS_STOCK.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_STOCK.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_STOCK.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS\DS_STOCK.xss">
+      <DependentUpon>DS_STOCK.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_USER.xsc">
+      <DependentUpon>DS_USER.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS_USER.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_USER.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS\DS_USER.xss">
+      <DependentUpon>DS_USER.xsd</DependentUpon>
+    </None>
+    <None Include="MEDICALDataSet.xsc">
+      <DependentUpon>MEDICALDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MEDICALDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MEDICALDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MEDICALDataSet.xss">
+      <DependentUpon>MEDICALDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MEDICALDataSet1.xsc">
+      <DependentUpon>MEDICALDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MEDICALDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MEDICALDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MEDICALDataSet1.xss">
+      <DependentUpon>MEDICALDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MEDICALDataSet6.xsc">
+      <DependentUpon>MEDICALDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="MEDICALDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MEDICALDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MEDICALDataSet6.xss">
+      <DependentUpon>MEDICALDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SELL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SELL.Designer.cs">
+      <DependentUpon>SELL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellReport.Designer.cs">
+      <DependentUpon>SellReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport.Designer.cs">
+      <DependentUpon>StockReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalStockReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalStockReport.Designer.cs">
+      <DependentUpon>TotalStockReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMst.Designer.cs">
+      <DependentUpon>UserMst.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange-open-lock-icon-30702.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2000px-Signin_font_awesome.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2000px-Signin_font_awesome.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2000px-Signin_font_awesome.svg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2000px-Signin_font_awesome.svg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2000px-Signin_font_awesome.svg4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2000px-Signin_font_awesome.svg5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\05.jpg" />
+    <None Include="Resources\signin-bg-3.jpg" />
+    <None Include="Resources\31152-ae-b.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
